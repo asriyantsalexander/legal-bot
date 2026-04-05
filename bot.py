@@ -111,7 +111,7 @@ def check_text(text: str) -> str:
         text = text[:50_000] + "\n\n[... текст обрезан до 50 000 символов ...]"
 
     message = anthropic_client.messages.create(
-        model="claude-sonnet-4-20250514",
+        model="claude-sonnet-4-6",
         max_tokens=4096,
         system=SYSTEM_PROMPT,
         messages=[
